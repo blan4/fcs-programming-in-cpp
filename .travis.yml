@@ -1,0 +1,30 @@
+language: rust
+sudo: false
+
+cache:
+  - cargo
+
+rust:
+  - stable
+
+before_script:
+  - chmod +x ./ci/build
+  - (test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)
+  - (test -x $HOME/.cargo/bin/mdbook || cargo install mdbook mdbook-linkcheck)
+  - cargo install-update -a
+
+script: mdbook build
+
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  local-dir: ./book/html
+  keep-history: false
+  on:
+    branch: master
