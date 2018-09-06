@@ -1,5 +1,8 @@
 language: rust
 sudo: false
+branches:
+  only:
+  - source
 
 cache:
   - cargo
