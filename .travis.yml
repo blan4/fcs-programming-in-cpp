@@ -29,4 +29,5 @@ deploy:
   local-dir: ./book/html
   keep-history: false
   on:
-    branch: master
+    branch: source
+  target-branch: master
