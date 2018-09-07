@@ -1,19 +1,99 @@
 # Инструменты
 
-## 1 Семестр (С-lang)
+Далее список инструментов и их сравнение. Выбирайте тот, который больше всего понравился.
 
-- [Virtual-C IDE](https://sites.google.com/site/virtualcide/).
-- Потом можно GCC(MinGW) и [VSCode](https://code.visualstudio.com/), [SublimeText3](https://www.sublimetext.com/3).
+## Онлайн компилятор [repl.it](https://repl.it/)
 
-## 2 Семестр (Сpp-lang)
+#### Плюсы: 
+- ничего не надо ставить на свой компьютер
 
-- [C++ IDE: CLion](https://www.jetbrains.com/clion/). Лицензия есть у преподавателя.
-- Вместо CLion можно [VSCode](https://code.visualstudio.com/), [SublimeText3](https://www.sublimetext.com/3).
-- Компилятор C++ для MS Windows (2 варианта).
-	- [MinGW-64](http://mingw-w64.org/).
-	- [Clang++ with MSbuild](https://gist.github.com/InNoHurryToCode/955d63db0d79699fed63fe18eeebf17e).
-- GCC, G++ or clang++ for Linux, macOS.
+#### Минусы: 
+- без интернета не работает
+- нет отладчика
+
+## Онлайн компилятор [www.onlinegdb.com](https://www.onlinegdb.com/)
+
+#### Плюсы: 
+- ничего не надо ставить на свой компьютер,
+- есть отладчик
+- можно залогиниться и хранить код там
+
+#### Минсуы:
+- без интернета не работает
+- может забанить по ip
+
+## Virtual-C IDE
+
+Качаем и ставим [Virtual-C IDE](https://sites.google.com/site/virtualcide/).  
+Запускаем и просто пишем код.
+
+#### Плюсы
+- работает без интернета
+- визуализация стека, кучи
+- пошаговое выполнение программы
+- отладка
+
+#### Минусы
+- игрушечный компилятор С (без С++)
+- могут быть баги
+
+## Tiny C Compiler + VScode
+
+Устанавливаем [VScode](https://code.visualstudio.com/).  
+Внутри VScode устанавливаем расширение [TCC compile/run](https://marketplace.visualstudio.com/items?itemName=TuyMove.tcc-compiler).  
+Пишем код, жмем F10.
+
+#### Плюсы:
+- легковесный компилятор и редактор
+- работает без интернета
+
+#### Минусы:
+- нет отладчика
+
+## MinGW-64 + VScode
+
+Качаем MinGW-64 с [официального сайта](https://sourceforge.net/projects/mingw-w64/).  
+Устанавливаем пакет в папку `C:\mingw-64`  
+Устанавливаем [VScode](https://code.visualstudio.com/).  
+Ставим расширение с/с++ по [документации](https://code.visualstudio.com/docs/languages/cpp).  
+Пишем код.  
+
+#### Плюсы
+- работает без интернета
+- легковесный компилятор и редактор
+- есть отладка
+- готово для промышленной разработки
+
+#### Минусы
+- надо разобраться как ставить расширение и настраивать отладку
+- конфиги launch.json и tasks.json надо написать самому
+
+## MinGW-64 + CLion
+
+Качаем MinGW-64 с [официального сайта](https://sourceforge.net/projects/mingw-w64/).  
+Устанавливаем пакет в папку `C:\mingw-64`  
+Качаем и ставим [CLion](https://www.jetbrains.com/clion/).  
+Лицензионный ключ взять у преподавателя.  
+Запускаете CLion и выбираете в качестве toolchain установленный mingw.
+
+#### Плюсы
+- работает без интернета
+- готово для промышленной разработки
+- полноценная IDE с автодополнением кода и подсказками
+- полноценная отладка
+- легковесный компилятор
+- использует систему сборки cmake
+
+#### Минусы
+- CLion может тормозить на слабом компьютере
+- На начальном этапе система сборки cmake может пугать и мешать.
 
 ## Дополнительно
 
-Можно пользоваться online компилятором https://repl.it/.
+С компилятором MinGW-64 можно использовать и другие текстовые редакторы, а не только VScode.
+
+Обратите внимание на следующие:
+- Geany
+- Sublime Text 3
+- CodeLite (есть дебаг, но тяжеловееесный)
+- KDevelop
