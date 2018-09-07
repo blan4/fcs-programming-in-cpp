@@ -68,6 +68,29 @@
 - надо разобраться как ставить расширение и настраивать отладку
 - конфиги launch.json и tasks.json надо написать самому
 
+## MinGW-64 + Eclipse CDT
+
+Качаем MinGW-64 с [официального сайта](https://sourceforge.net/projects/mingw-w64/).  
+Устанавливаем пакет в папку `C:\mingw-64`  
+Качаем [Eclipse](http://www.eclipse.org/downloads/packages/release/photon/r/eclipse-ide-cc-developers)  
+Запускаем eclipse, настриваем воркспейс, создаем папку для каждой лабы.  
+
+Туториалы:
+- [установка компилятора на windows](https://www.coursera.org/lecture/c-plus-plus-white/ustanovka-kompiliatora-na-windows-1Gn0y)
+- [установка eclipse](https://www.coursera.org/lecture/c-plus-plus-white/ustanovka-eclipse-na-windows-2g3LN)
+- [создание проекта](https://www.coursera.org/lecture/c-plus-plus-white/sozdaniie-proiekta-v-eclipse-w9ane)
+
+#### Плюсы
+- работает без интернета
+- полноценная IDE с автодополнением кода и подсказками
+- полноценная отладка
+- легковесный компилятор
+- все лабы в одном workspace
+
+#### Минусы
+- Может быть трудно понять как запускать проект
+- Устаревшая IDE, которую сейчас редко используют
+
 ## MinGW-64 + CLion
 
 Качаем MinGW-64 с [официального сайта](https://sourceforge.net/projects/mingw-w64/).  
