@@ -10,4 +10,5 @@
     - [Вариант 4](00_04_practise.md)
   - [Практика 1](./01_practise.md)
 - [Инструменты](./tools.md)
+  - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)

@@ -52,11 +52,7 @@
 
 ## MinGW-64 + VScode
 
-Качаем MinGW-64 с [официального сайта](https://sourceforge.net/projects/mingw-w64/).  
-Устанавливаем пакет в папку `C:\mingw-64`  
-Устанавливаем [VScode](https://code.visualstudio.com/).  
-Ставим расширение с/с++ по [документации](https://code.visualstudio.com/docs/languages/cpp).  
-Пишем код.  
+[Описание установки.](./tools_vscode_mingw.html)
 
 #### Плюсы
 - работает без интернета
