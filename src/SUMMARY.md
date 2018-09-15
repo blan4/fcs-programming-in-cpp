@@ -15,3 +15,4 @@
 - [Инструменты](./tools.md)
   - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)
+- [Видео лекции](./videos.md)
