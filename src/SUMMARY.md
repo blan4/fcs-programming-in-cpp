@@ -11,6 +11,7 @@
   - [Практика 1](./01_practise.md)
     - [Практика 1 (old)](./01_practise.old.md)
   - [Практика 2](./02_practise.md)
+- [Календарь](./calendar.md)
 - [Инструменты](./tools.md)
   - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)
