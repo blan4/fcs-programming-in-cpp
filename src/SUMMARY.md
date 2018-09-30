@@ -13,6 +13,7 @@
   - [Практика 2](./02_practise.md)
   - [Практика 3](./03_practise.md)
 - [Календарь](./calendar.md)
+- [Тесты](./tests.md)
 - [Инструменты](./tools.md)
   - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)
