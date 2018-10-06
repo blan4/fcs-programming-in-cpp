@@ -134,4 +134,4 @@ $$ \sqrt{x} = y, \ where \ y \ge{0} \ and \ y^2 = x $$
 
 ## Домашнее задание.
 
-Читать главу [3](http://givi.olnd.ru/kr2/03.html) и [4](http://givi.olnd.ru/kr2/04.html) K&R.
+Читать главу [3](http://givi.olnd.ru/kr2/03.html) K&R.
