@@ -170,9 +170,9 @@ float std(float* arr, unsigned int length)
 #### Ожидаемое поведение
 
 ```c
-int arr[] = {1,1,1,1};
+float arr[] = {1.f,1.f,1.f,1.f};
 std(arr, 4) == 0;
-int arr2[] = {1,2,3,1}
+float arr2[] = {1.f,2.f,3.f,1.f}
 std(arr2, 4) == 0.82915619758885; // в некотором смысле, так как float нельзя сравнивать на равенство
 
 ```
