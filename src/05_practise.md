@@ -45,7 +45,7 @@ int main(void) {
 ### Задание 1. Strdup
 
 Напишите функцию, которая возвращает указатель на новый выделенный сегмент памяти, который хранит копию строки, переданной, как аргумент функции.  
-По сути вы делаете копию функции из [https://en.cppreference.com/w/c/experimental/dynamic/strdup](string.h).
+По сути вы делаете копию функции из [string.h](https://en.cppreference.com/w/c/experimental/dynamic/strdup).
 
 #### Прототип функции
 
