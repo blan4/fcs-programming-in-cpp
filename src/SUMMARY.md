@@ -19,4 +19,6 @@
 - [Инструменты](./tools.md)
   - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)
+- [Конспекты](./theory.md)
+  - [Память](./theory/memory.md)
 - [Видео лекции](./videos.md)
