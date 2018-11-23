@@ -5,6 +5,7 @@
 - [Основы программирования на языках Си и C++ для начинающих](http://cppstudio.com/).
 - Андрей Александреску. Современное проектирование на С++.
 - [Что каждый программист должен знать о памяти](http://rus-linux.net/lib.php?name=/MyLDP/hard/memory/memory.html)
+- [Notes on Data Structures and Programming Techniques - Yale CS223](http://www.cs.yale.edu/homes/aspnes/classes/223/notes.html)
 
 ## Алгоритмы
 
@@ -13,9 +14,9 @@
 
 ## Полезные источники
 
-- [https://vicky002.github.io/AlgoWiki/#/](https://vicky002.github.io/AlgoWiki/#/)
+- [AlgoWiki](https://vicky002.github.io/AlgoWiki/#/)
 - [A complete computer science study plan to become a software engineer.](https://github.com/jwasham/coding-interview-university)
-- [https://isocpp.org/](https://isocpp.org/)
+- [isocpp.org](https://isocpp.org/)
 
 ## Сишка
 
@@ -33,5 +34,9 @@
 - [8. Pointers](https://www.gribblelab.org/CBootCamp/8_Pointers.html)
 - [Arrays and Pointers](http://c-faq.com/aryptr/index.html)
 - [Stanford C programming. - YouTube](https://www.youtube.com/playlist?list=PLD28639E2FFC4B86A)
-- [CS223/Notes](http://www.cs.yale.edu/homes/aspnes/pinewiki/CS223(2f)Notes.html)
+- Yale CS223/Notes
+	- [Pointers](http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)Pointers.html)
+	- [FunctionPointers](http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)FunctionPointers.html)
+	- [DynamicStorageAllocation](http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)DynamicStorageAllocation.html?highlight=%28CategoryProgrammingNotes%29)
+
 - [A Tutorial on Pointers and Arrays in C](http://home.netcom.com/~tjensen/ptr/pointers.htm)
