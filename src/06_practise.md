@@ -98,11 +98,9 @@ struct List {
 
 Вы можете посмотреть следующие материалы, чтобы лучше понять, как решить задачу:
 
-- https://www.geeksforgeeks.org/data-structures/linked-list/
-- https://tproger.ru/translations/linked-list-for-beginners/
-- https://www.ibm.com/developerworks/ru/library/l-data_structures_02/index.html
-
-## Примеры
+- [www.geeksforgeeks.org/data-structures/linked-list/](https://www.geeksforgeeks.org/data-structures/linked-list/)
+- [tproger.ru/translations/linked-list-for-beginners/](https://tproger.ru/translations/linked-list-for-beginners/)
+- [www.ibm.com/developerworks/ru/library/l-data_structures_02/index.html](https://www.ibm.com/developerworks/ru/library/l-data_structures_02/index.html)
 
 ## Задания
 
