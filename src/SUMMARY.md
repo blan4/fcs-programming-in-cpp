@@ -14,6 +14,7 @@
   - [Практика 3](./03_practise.md)
   - [Практика 4](./04_practise.md)
   - [Практика 5](./05_practise.md)
+  - [Практика 6](./06_practise.md)
 - [Календарь](./calendar.md)
 - [Тесты](./tests.md)
 - [Инструменты](./tools.md)
