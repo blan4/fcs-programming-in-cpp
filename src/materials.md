@@ -9,8 +9,9 @@
 
 ## Алгоритмы
 
-- [http://e-maxx.ru/algo/](http://e-maxx.ru/algo/)
-- [http://algolist.ru/](http://algolist.ru/)
+- [e-maxx.ru/algo](http://e-maxx.ru/algo/)
+- [algolist.ru](http://algolist.ru/)
+- [О сложности алгоритмов](https://habr.com/post/188010/)
 
 ## Полезные источники
 
