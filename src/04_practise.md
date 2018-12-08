@@ -192,9 +192,9 @@ void str_copy(char* dest, const char* src)
 
 ```c
 int main(void) {
-	char* str = "Hello world.";
+	char* src = "Hello world.";
 	char dst[13];
-	str_copy(dst, str);
+	str_copy(dst, src);
 	dst[0] == 'H';
 	dst[11] == '.';
 	printf("src=%s dst=%s\n", src, dst); // должно работать и выводить строки корректно
