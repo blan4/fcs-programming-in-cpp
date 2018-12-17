@@ -17,6 +17,7 @@
   - [Практика 6](./06_practise.md)
 - [Календарь](./calendar.md)
 - [Тесты](./tests.md)
+  - [Темы финального теста](./final_test.md)
 - [Инструменты](./tools.md)
   - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)
