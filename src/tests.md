@@ -6,3 +6,4 @@
 - [Тест 4 - глава 4.](https://goo.gl/forms/i7Ti1mE7mDDGVVJ92)
 - [Тест 5 - глава 5.](https://goo.gl/forms/Ib9IOXflkVfRqpGz2)
 - [Тест 6 - глава 6.](https://goo.gl/forms/7B3IBp2TrYefXU6B2)
+- [Финальный тест](https://goo.gl/forms/Mck8vJrXJtpPIgpo1)
