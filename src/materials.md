@@ -5,6 +5,17 @@
 - [Основы программирования на языках Си и C++ для начинающих](http://cppstudio.com/).
 - Андрей Александреску. Современное проектирование на С++.
 
+## Проектирование
+
+- [Паттерны проектирования для игр](http://gameprogrammingpatterns.com/contents.html)
+- [Puzzle Driven Development](https://www.yegor256.com/2010/03/04/pdd.html)
+- [Шаблон проектирования Entity-Component-System — реализация и пример игры](https://habr.com/ru/post/343778/)
+
+## GameDev
+
+- [Roguelike Tutorial in Rust](https://tomassedovic.github.io/roguelike-tutorial/index.html)
+- [Source code in c++ of the game "Cataclysm - Dark Days Ahead"](https://github.com/CleverRaven/Cataclysm-DDA)
+
 ## Алгоритмы
 
 - [e-maxx.ru/algo](http://e-maxx.ru/algo/)
@@ -33,6 +44,7 @@
 ## Плюсы
 
 - [Cpp Reference](https://en.cppreference.com/w/)
+- [A curated list of awesome C++ frameworks, libraries, resources, and shiny things](https://github.com/fffaraz/awesome-cpp)
 
 ## О памяти
 
@@ -46,3 +58,12 @@
 	- [DynamicStorageAllocation](http://www.cs.yale.edu/homes/aspnes/pinewiki/C(2f)DynamicStorageAllocation.html?highlight=%28CategoryProgrammingNotes%29)
 
 - [A Tutorial on Pointers and Arrays in C](http://home.netcom.com/~tjensen/ptr/pointers.htm)
+
+# Курсы
+
+- [MIT 6.00 Intro to Computer Science & Programming](https://www.youtube.com/playlist?list=PL4C4720A6F225E074)
+- [Stanford CS107 - Programming Paradigms](https://www.youtube.com/playlist?list=PLD28639E2FFC4B86A)
+- [Яндекс ШАД - Курс «Алгоритмы и структуры данных поиска»](https://www.youtube.com/playlist?list=PLJOzdkh8T5koEPv-R5W0ovmL_T2BjB1HX)
+- [Яндекс ШАД - Курс «Сложность вычислений»](https://www.youtube.com/playlist?list=PLJOzdkh8T5kpqLbFo-ZgXsU5HtFNcVDHo)
+- [Яндекс МФТИ - Искусство разработки на современном C++](https://www.coursera.org/specializations/c-plus-plus-modern-development)
+- [CSC - Программирование на C++](https://compscicenter.ru/courses/cpp-1/2015-autumn/classes/)

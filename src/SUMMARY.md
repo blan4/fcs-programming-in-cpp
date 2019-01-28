@@ -23,4 +23,3 @@
 - [Литература](./materials.md)
 - [Конспекты](./theory.md)
   - [Память](./theory/memory.md)
-- [Видео лекции](./videos.md)
