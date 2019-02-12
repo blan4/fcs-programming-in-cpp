@@ -21,6 +21,7 @@
 - [Второй семестр](./term_2.md)
   - [Критерии получения экзамена](./rules_2.md)
   - [Практики](./practises_2.md)
+  - [Список игр](./projects.md)
 - [Инструменты](./tools.md)
   - [Настройка MinGW + VScode](./tools_vscode_mingw.md)
 - [Литература](./materials.md)
