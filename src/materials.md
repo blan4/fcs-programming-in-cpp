@@ -59,6 +59,12 @@
 
 - [A Tutorial on Pointers and Arrays in C](http://home.netcom.com/~tjensen/ptr/pointers.htm)
 
+## Компиляция, Линковка
+
+- [Гид по линкерам для начинающих. Часть 1](https://learnc.info/c/beginners_guide_to_linkers.html)
+- [Гид по линкерам для начинающих. Часть 2](https://learnc.info/c/beginners_guide_to_linkers2.html)
+- [Фазы трансляции с++](https://ru.cppreference.com/w/cpp/language/translation_phases)
+
 # Курсы
 
 - [MIT 6.00 Intro to Computer Science & Programming](https://www.youtube.com/playlist?list=PL4C4720A6F225E074)
