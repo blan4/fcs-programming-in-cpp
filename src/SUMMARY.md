@@ -25,6 +25,7 @@
   - [Инструменты](./term_2/tools.md)
   - [Создание проекта](./term_2/setup_project.md)
 - [Инструменты](./tools/index.md)
+  - [Clion](./tools/clion.md)
   - [MinGW + VScode](./tools/vscode_mingw.md)
   - [Windows MSYS2 C++](./tools/msys2.md)
   - [Linux C++](./tools/linux_deb.md)

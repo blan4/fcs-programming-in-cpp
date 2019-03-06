@@ -119,6 +119,8 @@ gcc test_array_list.c  array_list.c list.h  -o array_list.out
 - Прототипы функций менять нельзя!
 - Библиотечные реализации использовать нельзя
 
+Рекомендуется использовать [__шаблон проекта__](https://drive.google.com/file/d/1I5_W_WK9mgCUm5KybYEq6pd4FBTtLJ6r/view?usp=sharing), который открывается в [CLion](../tools/clion.md).
+
 ## Домашнее задание.
 
 Читать главу [7](http://givi.olnd.ru/kr2/07.html) K&R.
