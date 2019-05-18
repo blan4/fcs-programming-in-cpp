@@ -12,4 +12,4 @@
 ![](http://www.msys2.org/6_msys2-update-system.png)
 6. Если потребуется, закройте терминал, откройте MSYS2 терминал снова и выполните команду `pacman -Su`.
 7. Теперь MSYS2 и пакетный менеджер Pacaman готовы к работе. В случае проблем читайте [официальный туториал](https://github.com/msys2/msys2/wiki/MSYS2-installation).
-8. Установите компиляторы, сборщики и необходимые библиотеки выполнив команду `pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-make mingw-w64-x86_64-gdb`.
+8. Установите компиляторы, сборщики и необходимые библиотеки выполнив команду `pacman -S mingw-w64-x86_64-cmake mingw-w64-x86_64-gcc mingw-w64-x86_64-pkg-config mingw-w64-x86_64-SDL2 mingw-w64-x86_64-SDL2_mixer mingw-w64-x86_64-make mingw-w64-x86_64-gdb`.

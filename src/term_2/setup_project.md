@@ -1,6 +1,6 @@
 # Создание проекта
 
-Проект игры рекомендуется делать на специальном учебном движке [WHY_CPP](https://github.com/senior-sigan/WHY_CPP), который работает поверх [sdl2](https://www.libsdl.org/). 
+Проект игры рекомендуется делать на специальном учебном движке [WHY_CPP](https://github.com/senior-sigan/WHY_CPP), который работает поверх [sdl2](https://www.libsdl.org/). Опционально можно установить [sdl2_mixer](https://www.libsdl.org/projects/SDL_mixer/) для воспроизведения звука. 
 
 ## Шаблон проекта
 

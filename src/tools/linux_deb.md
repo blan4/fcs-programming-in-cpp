@@ -4,5 +4,5 @@
 
 ```bash
 sudo apt update
-sudo apt install gcc g++ cmake make libsdl2-dev
+sudo apt install gcc g++ cmake make libsdl2-dev libsdl2-mixer-dev
 ```
