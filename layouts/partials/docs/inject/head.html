@@ -1,0 +1,4 @@
+	{{ $css := site.Data.assets.css }}
+
+	{{ printf "<link rel=\"stylesheet\" href=\"%s\" crossorigin=\"anonymous\" title=\"hl-light\">" (printf $css.highlight.url $css.highlight.version "github") | safeHTML }}
+	{{ printf "<link rel=\"stylesheet\" href=\"%s\" crossorigin=\"anonymous\" title=\"hl-dark\" disabled>" (printf $css.highlight.url $css.highlight.version "dracula") | safeHTML }}

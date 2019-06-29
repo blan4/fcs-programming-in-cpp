@@ -1,10 +1,14 @@
 all: build
 
-deps:
-	cargo install mdbook mdbook-linkcheck
+server:
+	hugo --i18n-warnings server
 
-serve:
-	mdbook serve
+build: clean
+	hugo
 
-build:
-	mdbook build
+clean:
+	rm -rf resources
+	rm -rf public
+
+deploy:
+	git push origin source

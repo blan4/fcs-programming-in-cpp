@@ -1,0 +1,13 @@
+[js.highlight]
+  version = "9.15.6"
+  sri = "sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8="
+  url = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/highlight.min.js"
+[js.mathJax]
+  version = "2.7.4"
+  sri = "sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w="
+  url = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/%s/MathJax.js?config=TeX-AMS_CHTML-full"
+
+[css.highlight]
+  version = "9.15.6"
+  sri = ""  # No SRI as highlight style is determined at run time.
+  url = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/%s/styles/%s.min.css"

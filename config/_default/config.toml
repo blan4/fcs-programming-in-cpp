@@ -1,0 +1,13 @@
+baseURL = "http://senior-sigan.net/fcs-programming-in-cpp/"
+languageCode = "ru-RU"
+title = "Программирование"
+googleAnalytics = "UA-113025618-1"
+
+theme = "book"
+enableGitInfo = true
+
+[params]
+  BookRepo = "https://github.com/senior-sigan/fcs-programming-in-cpp"
+	BookSection = 'docs'
+	BookEnableJS = true
+	BookMenuBundle = '/menu'

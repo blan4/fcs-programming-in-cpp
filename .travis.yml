@@ -1,33 +1,26 @@
-language: rust
 sudo: false
-branches:
-  only:
-  - source
-
-cache:
-  - cargo
-
-rust:
-  - stable
-
-before_script:
-  - (test -x $HOME/.cargo/bin/cargo-install-update || cargo install cargo-update)
-  - (test -x $HOME/.cargo/bin/mdbook || cargo install mdbook mdbook-linkcheck)
-  - cargo install-update -a
-
-script: mdbook build
-
+language: bash
+git:
+  depth: 1
+  submodules: true
+os: linux
+dist: xenial
+addons:
+  snaps:
+    - name: hugo
+      channel: extended/stable
+script:
+  - hugo
+  - touch public/.nojekyll
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: public
+  target_branch: master
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: source
 notifications:
   email:
     on_success: never
     on_failure: always
-
-deploy:
-  provider: pages
-  skip-cleanup: true
-  github-token: $GITHUB_TOKEN
-  local-dir: ./book/html
-  keep-history: false
-  on:
-    branch: source
-  target-branch: master

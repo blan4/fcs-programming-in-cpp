@@ -1,1 +1,4 @@
-book
+public/
+.idea/
+resources
+.DS_Store
