@@ -9,5 +9,5 @@ bookShowToC: true
 
 ## Контакты:
 
-- Сиганов Илья Дмитриевич (лекции, лабы): [vk](https://vk.com/senior_sigan), [email](mailto:ilya.siganov@gmail.com)
+- Сиганов Илья Дмитриевич (лекции, лабы): [vk](https://vk.com/senior_sigan)
 - Городецкий Алексей Дмитриевич (лабы): [vk](https://vk.com/over64).
