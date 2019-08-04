@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    06 Practise
+  
+ | Программирование</title>
+
+
+
+<link rel="stylesheet" href="/fcs-programming-in-cpp/book.min.f4161f5e2de53a2e927f51df1611323a2a12cccb2681f23cb6fc3517852e8643.css">
+
+
+<link rel="icon" href="/fcs-programming-in-cpp/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://senior-sigan.net/fcs-programming-in-cpp/">Программирование</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f fcs-programming-in-cpp\2f docs\2fterm1\2f 06_practise\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/rules/">Критерии оценки успеваемости</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/materials/">Литература</a></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term1/">Первый семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 0</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 1</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/02_practise/">Практика 2</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/03_practise/">Практика 3</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/04_practise/">Практика 4</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/05_practise/">Практика 5</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/06_practise/">Практика 6</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/tests/">Тесты</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/final_test/">Вопросы на зачёт</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/rules/">Критерии получения зачета</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term2/">Второй семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term2/rules/">Критерии получения экзамена</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/projects/">Примеры проектов</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/setup_project/">Создание проекта</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/tools/">Инструменты</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/tools/linux_deb/">Linux</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/msys2/">Windows</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/osx/">OsX</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/vscode_mingw/">VScode</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/clion/">CLion</a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/fcs-programming-in-cpp/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    06 Practise
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="практика-6">Практика 6</h1>
+
+<p>На этой практике мы познакомимся с Абстрактными Типами Данных. Разберем Список, как один из видов АТД. Напишем две реализации Списка - Связный Список и Список на основе массива. Проведем бенчмарк скорости работы двух реализаций в разных задачах.</p>
+
+<h2 id="теория">Теория</h2>
+
+<p>АТД - это математическая модель некоторого типа данных, где тип определяется некоторым поведением, то есть возможными значениями, которые он может принимать, возможными операциями над ним и поведением этих операций. Вся внутренняя структура такого типа скрыта от пользователя. В этом и заключается абстракция. Например, нам нужен тип данных, который хранит последовательности чисел. Нам не важно то, как реализовано хранения данных, нам важно чтобы мы могли добавлять в последовательность новые числа, получать доступ к ним. Когда мы пишем программу, мы не хотим концентрироваться на реализациях этих абстракций, мы хотим чтобы они работали эфективно и без ошибок. Например, использование АТД Список позволит нам не думать о выделении и очистке памяти.</p>
+
+<h3 id="список">Список</h3>
+
+<p>Рассмотрим матмодель списка - множество объектов, упорядоченное по индексу элемента в списке. Мы хотим иметь возможность применять следующий операции над списком:</p>
+
+<ul>
+<li><code>Get(index)</code> - взять элемент из списка по индексу</li>
+<li><code>Insert(index, element)</code> - вставить элемент по индексу
+
+<ul>
+<li><code>Append(element)</code> - вставить элемент в конец списка(стека)</li>
+<li><code>Prepend(element)</code> - вставить элемент в начало списка(очереди)</li>
+</ul></li>
+<li><code>Delete(index)</code> - удалить элемент по индексу
+
+<ul>
+<li><code>Pop()</code> - удалить элемент с конца списка(стека) и получить этот элемент</li>
+<li><code>Dequeue()</code> - удалить элемент с начала списка(очереди)</li>
+</ul></li>
+<li><code>Min()</code> - поиск минимального элемента в списке</li>
+<li><code>Search(value)</code> - поиск элемента в списке со значением value.</li>
+</ul>
+
+<p>Содержимое файла-интерфейса <code>list.h</code>. Его менять нельзя, подключайте его в ваших реализациях <code>#include &quot;list.h&quot;</code>.</p>
+
+<pre><code class="language-c">// это файл list.h
+#ifndef LIST_LIST_H
+#define LIST_LIST_H
+
+#include &lt;stdlib.h&gt;  // импортируем тип size_t, который используется для обозначения размера массивов
+
+typedef struct List List; // не специфицированная струткруа, конкретные реализации должны быть описаны в c-файлах
+List *Create(); // создание пустого списка
+List *Copy(const List *); // полное копирование списка
+
+void Append(List *, int); // вставка элемента в конец списка
+void Prepend(List *, int); // вставка элемента в начало списка
+void AppendAll(List *, const List *); // вставить все элементы одного списка в конец другого
+void InsertAt(List *, int, size_t); // втсавка элемента по индексу
+
+void RemoveAt(List *, size_t); // удаление элемента по индексу
+void RemoveAll(List *); // удаление всех элементов из списка
+
+int Pop(List *); // удаление элемента с конца списка, функция возвращает удаленный элемент
+int Dequeue(List *); // удаление элемента с начала списка, функция возвращает удаленный элемент
+
+size_t Length(const List *); // вычисление длины списка
+int GetAt(const List *, size_t); // взятие элемента списка по индексу
+
+#endif //LIST_LIST_H
+</code></pre>
+
+<p>Реализовать Список можно разными способами: линейно связный список и список на основе массива.</p>
+
+<h4 id="линейно-связный-список">Линейно связный список</h4>
+
+<p><img src="https://s3.amazonaws.com/hr-challenge-images/17168/1456961238-28488bfa0d-LinkedListExplanation.png" alt="" /></p>
+
+<p>Список можно представить в виде связанных объектов, каждый из которых хранит полезную нагрузку и имеет указатель на следующий элемент списка. Можно представить вагоны поезда, как связный список.</p>
+
+<p>Используйте следующий код для написания реализации:</p>
+
+<pre><code class="language-c">#include &quot;list.h&quot;
+
+// В узле списка хранится само значение value и указатель на следующий узел.
+// Эту структуру пользователи списка не должны видеть, так как она относится к внутренней реализации.
+typedef struct Node {
+  int value; // само значение, которое хранит узел
+  struct Node *next; // указатель на следующий узел
+} Node;
+
+// Пользовательская структура, которая скрывает механизм хранения данных.
+struct List {
+  Node *head; // указатель на голову списка
+  Node *tail; // указатель на хвост списка
+};
+</code></pre>
+
+<h4 id="список-на-основе-массива">Список на основе массива</h4>
+
+<p>Очевидно, можно реализовать список на основе непрерывного куска памяти - обычного массива. В этом случае мы как разработчики списка скроем от пользователя машинерию по выделению памяти при добавлении новых элементов в массив или по очистке памяти. Основная сложность тут состоит в том, чтобы как можно реже вызывать операции по довыделению памяти и не поймать ошибку, когда ОС не может выдать нам непрерывный кусок памяти большого размера.</p>
+
+<p>Вам придется использовать механизмы перевыделения памяти <code>realloc</code>.</p>
+
+<p>Используйте следующий код для написания реализации:</p>
+
+<pre><code class="language-c">#include &quot;list.h&quot;
+// Пользовательская структура, которая скрывает механизм хранения данных.
+struct List {
+  int* array; // динамический массив, в котором будут раниться все данные
+  size_t length; // размер массива array
+};
+</code></pre>
+
+<h2 id="литература">Литература</h2>
+
+<p>Вы можете посмотреть следующие материалы, чтобы лучше понять, как решить задачу:</p>
+
+<ul>
+<li><a href="https://www.geeksforgeeks.org/data-structures/linked-list/">www.geeksforgeeks.org/data-structures/linked-list/</a></li>
+<li><a href="https://tproger.ru/translations/linked-list-for-beginners/">tproger.ru/translations/linked-list-for-beginners/</a></li>
+<li><a href="https://www.ibm.com/developerworks/ru/library/l-data_structures_02/index.html">www.ibm.com/developerworks/ru/library/l-data_structures_02/index.html</a></li>
+</ul>
+
+<h2 id="задания">Задания</h2>
+
+<p>Используя описанные выше прототипы функций в файле <code>list.h</code>, необходиом сделать две разные реализации Списка: на основе массива, на основе связного списка. В результате вашей работы у вас будут следующие файлы с реализациями: <code>array_list.c</code> и <code>linked_list.c</code>. Создайте еще два файла <code>test_array_list.c</code> и <code>test_linked_list.c</code>, в которых вы тестируете работу ваших списков, то есть только в этих двух файлах будет <code>main</code> функция.</p>
+
+<p>Чтобы скомпилировать проект запустите следующие команды:</p>
+
+<pre><code class="language-bash">gcc test_linked_list.c linked_list.c list.h -o linked_list.out
+gcc test_array_list.c  array_list.c list.h  -o array_list.out
+
+./linked_list.out # запуск тестов для связного списка
+./array_list.out  # запуск тестов для списка на массивах
+</code></pre>
+
+<ul>
+<li>Прототипы функций менять нельзя!</li>
+<li>Библиотечные реализации использовать нельзя</li>
+</ul>
+
+<p>Рекомендуется использовать <a href="https://drive.google.com/file/d/1I5_W_WK9mgCUm5KybYEq6pd4FBTtLJ6r/view?usp=sharing"><strong>шаблон проекта</strong></a>, который открывается в <a href="../tools/clion.md">CLion</a>.</p>
+
+<h2 id="домашнее-задание">Домашнее задание.</h2>
+
+<p>Читать главу <a href="http://givi.olnd.ru/kr2/07.html">7</a> K&amp;R.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#практика-6">Практика 6</a>
+<ul>
+<li><a href="#теория">Теория</a>
+<ul>
+<li><a href="#список">Список</a>
+<ul>
+<li><a href="#линейно-связный-список">Линейно связный список</a></li>
+<li><a href="#список-на-основе-массива">Список на основе массива</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#литература">Литература</a></li>
+<li><a href="#задания">Задания</a></li>
+<li><a href="#домашнее-задание">Домашнее задание.</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+      
+
+    
+    <script src="/fcs-programming-in-cpp/js/mathjax-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/cpp.min.js"></script>
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113025618-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

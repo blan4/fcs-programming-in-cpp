@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    05 Practise
+  
+ | Программирование</title>
+
+
+
+<link rel="stylesheet" href="/fcs-programming-in-cpp/book.min.f4161f5e2de53a2e927f51df1611323a2a12cccb2681f23cb6fc3517852e8643.css">
+
+
+<link rel="icon" href="/fcs-programming-in-cpp/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://senior-sigan.net/fcs-programming-in-cpp/">Программирование</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f fcs-programming-in-cpp\2f docs\2fterm1\2f 05_practise\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/rules/">Критерии оценки успеваемости</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/materials/">Литература</a></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term1/">Первый семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 0</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 1</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/02_practise/">Практика 2</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/03_practise/">Практика 3</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/04_practise/">Практика 4</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/05_practise/">Практика 5</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/06_practise/">Практика 6</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/tests/">Тесты</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/final_test/">Вопросы на зачёт</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/rules/">Критерии получения зачета</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term2/">Второй семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term2/rules/">Критерии получения экзамена</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/projects/">Примеры проектов</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/setup_project/">Создание проекта</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/tools/">Инструменты</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/tools/linux_deb/">Linux</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/msys2/">Windows</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/osx/">OsX</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/vscode_mingw/">VScode</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/clion/">CLion</a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/fcs-programming-in-cpp/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    05 Practise
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="практика-5">Практика 5</h1>
+
+<p>На этой практике продолжаем разбираться с указателями. Но в отличие от предыдещей практии, где мы использовали автоматическую память, мы рассмотрим использование динамического выделения памяти на куче.</p>
+
+<p>После этой практики вы должны уметь без Google объяснить:
+- В чем разница между динамическим и автоматическим выделением памятью
+- Что такое malloc, calloc, free и как ими пользоваться.
+- Когда использовать динамическую память и malloc
+- Что такое указатель на функцию и как его использовать</p>
+
+<h2 id="примеры">Примеры</h2>
+
+<pre><code class="language-c">#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(void) {
+	int* arr; // жил да был указатель
+	arr = (int*)malloc(sizeof(int)); // и выделили для одного int место в памяти
+	*arr = 42; // и положили туда 42
+	printf(&quot;%p %d\n&quot;, arr, *arr); // и напечатали адрес его на экране, как и само содержимое памяти
+	free(arr); // и очистили память
+	// и тут решили создать массив!
+	size_t n = 10*10;
+	arr = (int*)calloc(sizeof(int), n); // выделили память на массив размера n элементов, каждый по sizeof(int) байт.
+	for (int i = 0; i &lt; n;i++) {
+		arr[i] = i*10; // заполнили его числами 0, 10, 20...,990
+	}
+
+	for (int i = 0; i &lt; n; i++) {
+		printf(&quot;%d %d\n&quot;, *(arr+i), arr[i]); // а это одно и то же
+	}
+	free(arr);
+}
+</code></pre>
+
+<h2 id="задания">Задания</h2>
+
+<ol>
+<li>Во всех заданиях действует запрет на использование библиотечных функций, кроме <code>malloc</code>, <code>calloc</code>, <code>realloc</code>, <code>free</code>, <code>printf</code>, <code>scanf</code>.</li>
+<li>Вам не требуется выделять память динамически в этих задачах.</li>
+<li>Вся логика задания должна находиться в функциях.</li>
+<li>В функции <code>main</code> ТОЛЬКО тестирование работоспособности функции.</li>
+<li>Прототипы функций менять запрещено.</li>
+<li>Вспомогательные функции создавать можно.</li>
+</ol>
+
+<h3 id="задание-1-strdup">Задание 1. Strdup</h3>
+
+<p>Напишите функцию, которая возвращает указатель на новый выделенный сегмент памяти, который хранит копию строки, переданной, как аргумент функции.<br />
+По сути вы делаете копию функции из <a href="https://en.cppreference.com/w/c/experimental/dynamic/strdup">string.h</a>.</p>
+
+<h4 id="прототип-функции">Прототип функции</h4>
+
+<pre><code class="language-c">char *_strdup(const char* str);
+</code></pre>
+
+<h4 id="ожидаемое-поведение">Ожидаемое поведение</h4>
+
+<ul>
+<li>функция возвращает NULL, если <code>str</code> это NULL</li>
+<li>функция возвращает NULL, если не хватает памяти</li>
+<li>в любом другом случае полученная копия строки должна корректно печататься и заканчиваться <code>\0</code>.</li>
+</ul>
+
+<h3 id="задание-2-1-создание-матрицы">Задание 2.1. Создание матрицы</h3>
+
+<p>Напишите функцию, которая выделяет память для двумерной матрицы из целых чисел,</p>
+
+<h4 id="прототип-функции-1">Прототип функции</h4>
+
+<pre><code class="language-c">int **alloc_grid(int width, int height);
+</code></pre>
+
+<h4 id="ожидаемое-поведение-1">Ожидаемое поведение</h4>
+
+<ul>
+<li>каждый элемент матрицы должен быть равен 0</li>
+<li>если входные параметры некорректны (равны 0, отрицательны), то функция возвращает NULL</li>
+<li>если не хватает памяти, то функция возрващает NULL</li>
+</ul>
+
+<h3 id="задание-2-2-удаление-матрицы">Задание 2.2. Удаление матрицы</h3>
+
+<p>Напишите функцию, которая очищает память выделенную для ранее созданной матрицы.</p>
+
+<h4 id="прототип-функции-2">Прототип функции</h4>
+
+<pre><code class="language-c">void free_grid(int **grid, int height)
+</code></pre>
+
+<h4 id="ожидаемое-поведение-2">Ожидаемое поведение</h4>
+
+<ul>
+<li>Ваша программа не должна падать, если входные параметры некорректны</li>
+<li>Проверьте работоспособность вместе с функцией <code>alloc_grid</code>.</li>
+</ul>
+
+<h3 id="задание-3-split">Задание 3. Split</h3>
+
+<p>Напишите функцию, которая разбивает предложение на слова. То есть использует пробелы как разделитель строки.<br />
+Полная функция <a href="https://en.cppreference.com/w/c/string/byte/strtok">strtok</a> реализована в стандартной библиотке. Использовать ее нельзя.</p>
+
+<h4 id="прототип-функции-3">Прототип функции</h4>
+
+<pre><code class="language-c">char **strplit(const char *str);
+</code></pre>
+
+<h4 id="ожидаемое-поведение-3">Ожидаемое поведение</h4>
+
+<ul>
+<li>Функция принимает на вход строку.</li>
+<li>Возвращает массив строк, которые не включают оконечные пробелы. Строки нуль-терминальные.</li>
+<li>Если разделитель не встречается, то возвращает массив из одного слова, равного самой строке.</li>
+<li>Если строка пустая или NULL, то возвращается NULL.</li>
+<li>Функция возвращает NULL, если что-то идет не так.</li>
+</ul>
+
+<h4 id="пример-поведения">Пример поведения</h4>
+
+<pre><code class="language-c">// некоторый псевдокод
+strsplit(&quot;hello world! Nya&quot;) == [&quot;hello&quot;, &quot;world!&quot;, &quot;Nya&quot;]
+</code></pre>
+
+<h3 id="задание-4-поиск-истины">Задание 4. Поиск истины</h3>
+
+<p>Напишите функцию, которая находит индекс первого попавшегося элемента в массиве, который(т.е. элемент) удовлетворяет некоторому условию. Условие подается на вход функции, как указатель на функцию.</p>
+
+<h4 id="прототип-функции-4">Прототип функции</h4>
+
+<pre><code class="language-c">// array - указатель на массив
+// size - размер массива
+// predicate - указатель на функцию, которая принимает на вход число - элемент массива, и возвращает 1 если условие выполнено и 0 иначе.
+int find_index(const int *array, int size, int (*predicate)(int));
+</code></pre>
+
+<h4 id="ожидаемое-поведение-4">Ожидаемое поведение</h4>
+
+<ul>
+<li>в любой непонятной ситуации функция возвращает -1, как индикатор ошибки.
+
+<ul>
+<li>если массив пустой</li>
+<li>если размер непправильного формата</li>
+<li>если ничего не найдено</li>
+</ul></li>
+<li>predicate создает пользователь функции. Поэтому надо протестировать на разных предикатах:
+
+<ol>
+<li>поиск первого четного числа</li>
+<li>поиск первого числа, больше 42</li>
+</ol></li>
+</ul>
+
+<h2 id="домашнее-задание">Домашнее задание.</h2>
+
+<p>Читать главу <a href="http://givi.olnd.ru/kr2/06.html">6</a> K&amp;R.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#практика-5">Практика 5</a>
+<ul>
+<li><a href="#примеры">Примеры</a></li>
+<li><a href="#задания">Задания</a>
+<ul>
+<li><a href="#задание-1-strdup">Задание 1. Strdup</a>
+<ul>
+<li><a href="#прототип-функции">Прототип функции</a></li>
+<li><a href="#ожидаемое-поведение">Ожидаемое поведение</a></li>
+</ul></li>
+<li><a href="#задание-2-1-создание-матрицы">Задание 2.1. Создание матрицы</a>
+<ul>
+<li><a href="#прототип-функции-1">Прототип функции</a></li>
+<li><a href="#ожидаемое-поведение-1">Ожидаемое поведение</a></li>
+</ul></li>
+<li><a href="#задание-2-2-удаление-матрицы">Задание 2.2. Удаление матрицы</a>
+<ul>
+<li><a href="#прототип-функции-2">Прототип функции</a></li>
+<li><a href="#ожидаемое-поведение-2">Ожидаемое поведение</a></li>
+</ul></li>
+<li><a href="#задание-3-split">Задание 3. Split</a>
+<ul>
+<li><a href="#прототип-функции-3">Прототип функции</a></li>
+<li><a href="#ожидаемое-поведение-3">Ожидаемое поведение</a></li>
+<li><a href="#пример-поведения">Пример поведения</a></li>
+</ul></li>
+<li><a href="#задание-4-поиск-истины">Задание 4. Поиск истины</a>
+<ul>
+<li><a href="#прототип-функции-4">Прототип функции</a></li>
+<li><a href="#ожидаемое-поведение-4">Ожидаемое поведение</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#домашнее-задание">Домашнее задание.</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+      
+
+    
+    <script src="/fcs-programming-in-cpp/js/mathjax-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/cpp.min.js"></script>
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113025618-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

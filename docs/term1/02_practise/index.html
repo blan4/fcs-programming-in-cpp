@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    02 Practise
+  
+ | Программирование</title>
+
+
+
+<link rel="stylesheet" href="/fcs-programming-in-cpp/book.min.f4161f5e2de53a2e927f51df1611323a2a12cccb2681f23cb6fc3517852e8643.css">
+
+
+<link rel="icon" href="/fcs-programming-in-cpp/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://senior-sigan.net/fcs-programming-in-cpp/">Программирование</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f fcs-programming-in-cpp\2f docs\2fterm1\2f 02_practise\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/rules/">Критерии оценки успеваемости</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/materials/">Литература</a></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term1/">Первый семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 0</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 1</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/02_practise/">Практика 2</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/03_practise/">Практика 3</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/04_practise/">Практика 4</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/05_practise/">Практика 5</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/06_practise/">Практика 6</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/tests/">Тесты</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/final_test/">Вопросы на зачёт</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/rules/">Критерии получения зачета</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term2/">Второй семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term2/rules/">Критерии получения экзамена</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/projects/">Примеры проектов</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/setup_project/">Создание проекта</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/tools/">Инструменты</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/tools/linux_deb/">Linux</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/msys2/">Windows</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/osx/">OsX</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/vscode_mingw/">VScode</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/clion/">CLion</a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/fcs-programming-in-cpp/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    02 Practise
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="практика-2">Практика 2</h1>
+
+<p>В этот раз посмотрим, как работать с функциями с Си. Рассмотрим рекурсивные алгоритмы, напишем пару утилитных методов. Поработаем над передачей переменных через аргументы функции.</p>
+
+<p>Чтобы лучше понять рекурсию рекомендуется прочитать главы 1.2.1 и 1.2.2 книги <a href="http://newstar.rinet.ru/~goga/sicp/sicp.pdf">&ldquo;Структура и интерпретация компьютерных программ&rdquo;</a>, страница 48.</p>
+
+<h2 id="примеры">Примеры</h2>
+
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+/**
+ * В этих переменных копии переменных, 
+ * которые были переданы как аргументы функции
+ **/
+int add(int a, int b) {
+    return a + b;
+}
+
+int scalar_mul(int x[], int y[], unsigned int size) {
+    int accum = 0;
+    for (int i = 0; i &lt; size; i++) {
+        accum += x[i]*y[i];
+    }
+    return accum;
+}
+
+// Рекурсия!!!
+// Функция может вызвать саму себя.
+int recursion(int i) {
+    if (i &lt;= 0) return 0; // Главное не забудьте указать условие, когда надо остановиться.
+    return i + recursion(i - 1);
+}
+
+int main(void) {
+  int a = 100500; // эта переменная a не имеет отношению к аргументу функции add 
+  int x = 42;
+  int y = 2;
+  int z = add(x, y); // теперь a = x, b = y.
+  printf(&quot;%d\n&quot;, z); // z == 44
+  
+  int arr1[] = {1,2,3,4,5};
+  int arr2[] = {5,4,3,2,1};
+  printf(&quot;%d\n&quot;, scalar_mul(arr1, arr2, 5)); // 1*5+2*4+3*3+4*2+5*1
+  
+  printf(&quot;%d\n&quot;, recursion(5)); // 5 + 4 + 3 + 2 + 1 + 0
+}
+</code></pre>
+
+<h2 id="задания">Задания</h2>
+
+<h3 id="задание-1-калькуляции">Задание 1. Калькуляции.</h3>
+
+<p>Реализуйте следйющие простейшие математические операции в виде функций над вещественными числами.</p>
+
+<ul>
+<li>сумма 2 чисел</li>
+<li>разность 2 числе</li>
+<li>произведение 2 чисел</li>
+<li>деление 2 чисел</li>
+<li>возведение числа в степень (степень - целое число, в том числе отрицательное)</li>
+<li>модуль числа</li>
+</ul>
+
+<p>Используя эти функции и только эти функции запишите выражение:
+$$\frac{\frac{3^7}{2-5}}{|0.3 \cdot 21 - 2^6|^2} + \frac{1}{-3^{-2}}$$</p>
+
+<h3 id="задание-2-байтомешалка">Задание 2. Байтомешалка.</h3>
+
+<p>Напишите функцию invert(x, p, n), возвращающую значение x с инвертированными n битами, начиная с позиции p (остальные биты не изменяются). Протестируйте работу программы на разных данных. Запишите в main функции 5 разных вызово invert и сравнение с ожидаемыми значениями. Выведите в консоль результаты invert.</p>
+
+<p>Пример: пусть дано число <code>42==00101010b</code>. Тогда <code>invert(42, 3, 4)==invert(00101010b, 3, 4)==00100101b==37</code>.</p>
+
+<h3 id="задание-3-фибоначчи">Задание 3. Фибоначчи.</h3>
+
+<p>Напишите рекурсивную функцию, вычисляющую N-ый символ последовательности Фибоначчи. Протестируйте работу программы на разных данных.</p>
+
+<h3 id="задание-4-сумма-цифр">Задание 4. Сумма цифр.</h3>
+
+<p>Посчитайте сумму цифр числа используя рекурсию. (в прошлый раз были циклы). Например, для числа <code>1234</code> сумма равна <code>1+2+3+4=10</code>.</p>
+
+<h3 id="задание-5-возведение-в-степень">Задание 5. Возведение в степень.</h3>
+
+<p>Напишите программу, возводящее число в степень с помощью рекурсии.<br />
+Разрешено использовать только умножение, вычитание, сложение и рекурсию. НЕЛЬЗЯ использовать циклы (while, for).</p>
+
+<p>$$
+\begin{aligned}
+b^n = b * b^{n-1} \<br />
+b^0 = 1
+\end{aligned}
+$$</p>
+
+<h3 id="задание-6-быстрое-возведение-в-степень">Задание 6. Быстрое возведение в степень</h3>
+
+<p>Существует более быстрый алгоритм возведения числа в степень, основывающийся на следующем наблюдении:</p>
+
+<p>$$
+\begin{aligned}
+b ^ n = {(b^{n/2})} ^ 2 &amp;&amp; if \ n \ is \ even \<br />
+b ^ n = b * b^{n-1} &amp;&amp; if \ n \ is \ odd
+\end{aligned}
+$$</p>
+
+<p>А также примите во внимание факт, что</p>
+
+<p>$$
+(b^{n/2})^2 = (b^2) ^ {n/2}
+$$</p>
+
+<p>Реализуйте быстрое возведение в степень с помощью рекурсии.<br />
+Разрешено использовать только умножение, вычитание, сложение и рекурсию.</p>
+
+<h3 id="задание-7-вычисление-квадратного-корня-числа">Задание 7. Вычисление квадратного корня числа.</h3>
+
+<p>$$ \sqrt{x} = y, \ where \ y \ge{0} \ and \ y^2 = x $$</p>
+
+<p>Использовать <a href="https://ru.wikipedia.org/wiki/Метод_Ньютона">метод Ньютона</a>.</p>
+
+<h4 id="hints">Hints</h4>
+
+<p>Для решения задачи можно прочитать главу 1.1.7 (стр 40) из книги <a href="http://newstar.rinet.ru/~goga/sicp/sicp.pdf">&ldquo;Структура и интерпретация компьютерных программ&rdquo;</a>. Там используется в примерах язык Lisp, но это не должно пугать.</p>
+
+<h3 id="задание-8-ханойская-башня">Задание 8. Ханойская башня</h3>
+
+<p>Даны 1 пирамидка с дисками разного размера, и еще 2 пустые пирамидки.<br />
+Надо переместить диски с одной пирамидки на другую.<br />
+Перекладывать можно только по одному диску за ход.<br />
+Складывать диски можно только меньший на больший.</p>
+
+<p>Хорошее описание <a href="https://m.habrahabr.ru/post/200758/">тут</a>.</p>
+
+<p><img src="https://habrastorage.org/getpro/habr/post_images/acb/9ab/caf/acb9abcaf951f040ff7a367e7b1458d7.gif" alt="Ханойская башня" /></p>
+
+<p>Выводите в консоль процесс перекладывания дисков. (Откуда - Куда). Или выводите состояние пирамидок на каждом шаге.</p>
+
+<h2 id="домашнее-задание">Домашнее задание.</h2>
+
+<p>Читать главу <a href="http://givi.olnd.ru/kr2/03.html">3</a> K&amp;R.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#практика-2">Практика 2</a>
+<ul>
+<li><a href="#примеры">Примеры</a></li>
+<li><a href="#задания">Задания</a>
+<ul>
+<li><a href="#задание-1-калькуляции">Задание 1. Калькуляции.</a></li>
+<li><a href="#задание-2-байтомешалка">Задание 2. Байтомешалка.</a></li>
+<li><a href="#задание-3-фибоначчи">Задание 3. Фибоначчи.</a></li>
+<li><a href="#задание-4-сумма-цифр">Задание 4. Сумма цифр.</a></li>
+<li><a href="#задание-5-возведение-в-степень">Задание 5. Возведение в степень.</a></li>
+<li><a href="#задание-6-быстрое-возведение-в-степень">Задание 6. Быстрое возведение в степень</a></li>
+<li><a href="#задание-7-вычисление-квадратного-корня-числа">Задание 7. Вычисление квадратного корня числа.</a>
+<ul>
+<li><a href="#hints">Hints</a></li>
+</ul></li>
+<li><a href="#задание-8-ханойская-башня">Задание 8. Ханойская башня</a></li>
+</ul></li>
+<li><a href="#домашнее-задание">Домашнее задание.</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+      
+
+    
+    <script src="/fcs-programming-in-cpp/js/mathjax-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/cpp.min.js"></script>
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113025618-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

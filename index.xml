@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Программирование</title>
+    <link>http://senior-sigan.net/fcs-programming-in-cpp/</link>
+    <description>Recent content on Программирование</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    
+	<atom:link href="http://senior-sigan.net/fcs-programming-in-cpp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/materials/</guid>
+      <description>Литература  Керниган Ритчи. Язык программирования си. Бьерн Страуструп. Язык программирования С++. Основы программирования на языках Си и C++ для начинающих. Андрей Александреску. Современное проектирование на С++.  Проектирование  Паттерны проектирования для игр Puzzle Driven Development Шаблон проектирования Entity-Component-System — реализация и пример игры  GameDev  Roguelike Tutorial in Rust Source code in c++ of the game &amp;ldquo;Cataclysm - Dark Days Ahead&amp;rdquo;  Алгоритмы  e-maxx.ru/algo algolist.ru О сложности алгоритмов  Полезные источники  AlgoWiki A complete computer science study plan to become a software engineer.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/rules/</guid>
+      <description>Критерии оценки успеваемости Успеваемость студента оценивается в баллах, на основе которых складывается промежуточная оценка (зачёт) и итоговая(экзамен). Баллы выставляются за лабораторные, домашние работы, тесты, посещаемость практик и лекций, проектную работу и за письменную и устную работу на зачёте и экзамене.
+Правила начисления баллов Пара состоит из двух половин по 45 минут. Студенту начисляется по одному баллу за присутствие на половине любой лекции или лабораторной работы, при условии, что он не опоздал на эту половину более, чем на 15 минут.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/00_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/00_practise/</guid>
+      <description>Практика 0 В классе Настройка окружения.
+Дома Читать Главу 1 из книги K&amp;amp;R.
+Задача 1. (Упражнение 1.4.) Напишите программы печати таблицы перехода от градусов Цельсия к градусам Фаренгейта от 0 до 300 градусов.
+Подсказки:  в Главе 1 описана обратная задача.  Задача 2. (Упражнение 1.8.) Напишите программу для подсчета пробелов и табуляций.
+Сценарий использования:  запускается приложение. пользователь &amp;ldquo;вводит&amp;rdquo; текст с клавиатуры. когда пользователь нажимает Enter, то программа выводит сколько пробелов и табуляций было нажато во время ввода текста.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/01_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/01_practise/</guid>
+      <description>Практика 1 В классе В классе и дома решите все задачи.
+Весь код можно писать внутри функции main. Свои функции создавать не обязательно. Динамической памятью пользоваться не надо.
+Вам понадобятся функции printf для печати в консоль текста.
+Функция scanf для ввода чисел из консоли. Когда пользователь нажимает на Enter число считается введеным.
+Примеры Для начала попробуйте скопировать и запустить эти примеры. Можете использовать онлайн компиляторы repl.it или www.onlinegdb.com. А можете открыть любой текстовый редактор, вставить туда код из примера, сохранить его с расширением .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/02_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/02_practise/</guid>
+      <description>Практика 2 В этот раз посмотрим, как работать с функциями с Си. Рассмотрим рекурсивные алгоритмы, напишем пару утилитных методов. Поработаем над передачей переменных через аргументы функции.
+Чтобы лучше понять рекурсию рекомендуется прочитать главы 1.2.1 и 1.2.2 книги &amp;ldquo;Структура и интерпретация компьютерных программ&amp;rdquo;, страница 48.
+Примеры #include&amp;lt;stdio.h&amp;gt; /** * В этих переменных копии переменных, * которые были переданы как аргументы функции **/ int add(int a, int b) { return a + b; } int scalar_mul(int x[], int y[], unsigned int size) { int accum = 0; for (int i = 0; i &amp;lt; size; i++) { accum += x[i]*y[i]; } return accum; } // Рекурсия!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/03_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/03_practise/</guid>
+      <description>Практика 3 На этой практике разбираем алгоритмы по работе с массивами и двумерными массивами(матрицами).
+Примеры /** * Эта программа заполнит двумерный массив числами от 0 до 8. И будет выведено на экран: * 0 1 2 * 3 4 5 * 6 7 8 */ #include&amp;lt;stdio.h&amp;gt; int main(void) { short matrix[3][3]; int el = 0; for (unsigned int i = 0; i &amp;lt; 3;i++) { for (unsigned int j = 0; j &amp;lt; 3; j++) { matrix[i][j] = el; el++; } } for (unsigned int i = 0; i &amp;lt; 3;i++) { printf(&amp;quot;\n&amp;quot;); for (unsigned int j = 0; j &amp;lt; 3; j++) { printf(&amp;quot;%d &amp;quot;, matrix[i][j]); } } }  Задания Задание 1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/04_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/04_practise/</guid>
+      <description>Практика 4 На этой практике разбираемся с указателями, строками и массивами.
+После этой практики вы должны уметь без Google объяснить: - что такое указатели и как их использовать - что такое массивы и как их использовать - в чем разница между указателями и массивами
+Примеры Просто указатели Запустите программу и посмотрите что будет выведено на экран.
+#include &amp;lt;stdio.h&amp;gt; int main(void) { int a = 10; // это обычная переменная int* b; // это объявление указателя на int // &amp;amp; - операция взятия указателя b = &amp;amp;a; // это присвоение указателю b адреса переменной a // * - операция разыменования указателя.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/05_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/05_practise/</guid>
+      <description>Практика 5 На этой практике продолжаем разбираться с указателями. Но в отличие от предыдещей практии, где мы использовали автоматическую память, мы рассмотрим использование динамического выделения памяти на куче.
+После этой практики вы должны уметь без Google объяснить: - В чем разница между динамическим и автоматическим выделением памятью - Что такое malloc, calloc, free и как ими пользоваться. - Когда использовать динамическую память и malloc - Что такое указатель на функцию и как его использовать</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/06_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/06_practise/</guid>
+      <description>Практика 6 На этой практике мы познакомимся с Абстрактными Типами Данных. Разберем Список, как один из видов АТД. Напишем две реализации Списка - Связный Список и Список на основе массива. Проведем бенчмарк скорости работы двух реализаций в разных задачах.
+Теория АТД - это математическая модель некоторого типа данных, где тип определяется некоторым поведением, то есть возможными значениями, которые он может принимать, возможными операциями над ним и поведением этих операций. Вся внутренняя структура такого типа скрыта от пользователя.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/final_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/final_test/</guid>
+      <description>Вопросы на зачет  Типы данных. Стандартные типы. Целочисленные типы. Логический тип. Символьный тип. Вещественный тип. Константы. Объявление переменных. Определение переменных. Сравнение значений типов с плавающей точкой. Классы памяти. Выделение и освобождение памяти. Арифметические операции. Логические операции. Операторы ветвления. Оператор выбора. Операторы цикла. Операторы передачи управления. Лексический анализ, синтаксический анализ, семантический анализ. Указатель. Инициализация указателей. Операции с указателями. Статические массивы. Одномерные массивы. Многомерные массивы. Динамические массивы. Отличие и связь массивов и указателей.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/rules/</guid>
+      <description>Критерии получения зачета в 1 семестре Все программы должны быть написаны на языке Си.
+Бальная система Максимум баллов за посещение лабораторных: 34.
+Максимум баллов за все лабораторные работы: 56.
+Максимум баллов за все тесты: 36.
+Итого максимум за работу на занятиях: 126.
+Дополнительно можно добрать баллов на финальном тесте: 40.
+Зачет ставится в случае набора студентов больше 107 баллов, что составляет 85%.
+ Например, можно получить зачет получив 34 балла за посещение, 44 за лабораторные и 30 за тесты.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/tests/</guid>
+      <description> Тесты  Тест 1 - глава 1. Тест 2 - глава 2. Тест 3 - глава 3. Тест 4 - глава 4. Тест 5 - глава 5. Тест 6 - глава 6. Финальный тест  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/practises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/practises/</guid>
+      <description>Практики 2 семестр Задание 1  Выбрать игру из списка, которую вы будете делать весь семестр. Расписать игру на набор компонент-фичей, как было сделано с Арканоидом на практике. Спланировать реализацию компонент на ближайшие 2 спринта по 4 недели. (Весь семестр разбит на 4 спринта по 4 недели.) Зафиксировать выбор игры, набор компонент и план реализации в документе и отправить на почту ilya.siganov@gmail.com.  Теоретический план освоения знаний и навыков  Работа с многофайловым проектом, система сборки cmake, раздельная компиляция, базовая декомпозиция проекта на функции и структуры, использование стандартной библиотеки c++ (algorithm, vector, map, set, iostream) Декомпозиция на классы, применение интерфейсов, динамического полиморфизма.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/projects/</guid>
+      <description> Игры для декомпозиции  Pacman   Bomberman  
+ Zelda  
+ Space Invaders  
+ Asteroids  
+ Tank Wars  
+ 1942  
+ Battle City  
+ Tron   Micro Machine  
+ Rampart  
+ TowerDefence Dwarffortress Diablo 2 Cataclysm: DDA  Вдохновление  100 nes games in 10 minutes Top 10 Arcade Games Of The 1970s Top 10 Arcade Games Of The 1980s  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/rules/</guid>
+      <description>Критерии получения экзамена во 2 семестре Все программы должны быть написаны на языке С++.
+Тут будет подробное описание позже</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/setup_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/setup_project/</guid>
+      <description>Создание проекта Проект игры рекомендуется делать на специальном учебном движке WHY_CPP, который работает поверх sdl2. Опционально можно установить sdl2_mixer для воспроизведения звука.
+Шаблон проекта Скачайте к себе на компьютер шаблон проекта. Для этого зайдите на сайт репозитория шаблона и нажмите зеленую кнопку clone or download, и качайте zip-архив.
+Запустите CLion и нажмите Open, чтобы открыть скачанный шаблон проекта.
+В меню File нажмите пункт Reload CMake project.
+В меню Run нажмите Run &#39;game&#39;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/tools/</guid>
+      <description>Инструменты Мы будем использовать следующее ПО:
+ Компилятор C++: g++ или clang++. Библиотека SDL2. Опционально библиотека SDL2_mixer для звука. Библиотека WHY_CPP Утилита сборки проектов CMake и Make. Среда разработки CLion.  Инструкции для установки ПО Установка компилятора  Для ОС Windows. Для OsX Для Linux (Ubuntu, Mint, Debian)  Установка IDE CLion Инструкция</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/clion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/clion/</guid>
+      <description>Установка IDE CLion  Скачайте с официального сайте Toolbox - это специальная программа, через которую можно ставить и обновлять разные среды разработки от JetBrains. Запустите тулбокс и установите через него CLion.  Получение учебной лицензии Обратитесь к своему преподавателю, чтобы он вам выдал учебную лицензию JetBrains на CLion.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/linux_deb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/linux_deb/</guid>
+      <description> Linux C++  Откройте терминал и выполните команду
+sudo apt update sudo apt install gcc g++ cmake make libsdl2-dev libsdl2-mixer-dev   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/msys2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/msys2/</guid>
+      <description>Msys2  Скачайте установщик MSYS2:  для 64 битной Windows для 32 битной Windows  Запустите установщик, нажмите Next  Установите MSYS2 в папку C:\msys64 или C:\msys32. Обратите внимание, не должно быть никаких русских символов или пробелов! Установите флажок &amp;ldquo;Run MSYS2 now&amp;rdquo; и нажмите Finish  Откроется терминал. Введите команду pacman -Syu, чтобы обновить системные пакеты.  Если потребуется, закройте терминал, откройте MSYS2 терминал снова и выполните команду pacman -Su.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/osx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/osx/</guid>
+      <description> OsX C++  Установите менеджер пакетов brew. Откройте терминал и выполните команду brew install gcc cmake sdl2 sdl2_mixer.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/vscode_mingw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/vscode_mingw/</guid>
+      <description>Настройка MinGW + VScode  Качаем MinGW с официального сайта. Устанавливаем пакет в папку C:\mingw-w64. Следите, чтобы не было пробелов и русских символов в именах папок!! Добавялем C:\mingw-w64\mingw64\bin в переменные окружения PATH. Устанавливаем с официального сайта VScode. В vscode ставим расширение C/C++ tools. Перезапускаем редактор. Нажимаем Файл &amp;gt; Открыть директорию. Открываем директорию, где будут лежать все лабораторные работы по предмету. Создаем папку .vscode и складываем туда три файла launch.json, settings.</description>
+    </item>
+    
+  </channel>
+</rss>

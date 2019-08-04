@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Программирование</title>
+    <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/</link>
+    <description>Recent content on Программирование</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    
+	<atom:link href="http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/practises/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/practises/</guid>
+      <description>Практики 2 семестр Задание 1  Выбрать игру из списка, которую вы будете делать весь семестр. Расписать игру на набор компонент-фичей, как было сделано с Арканоидом на практике. Спланировать реализацию компонент на ближайшие 2 спринта по 4 недели. (Весь семестр разбит на 4 спринта по 4 недели.) Зафиксировать выбор игры, набор компонент и план реализации в документе и отправить на почту ilya.siganov@gmail.com.  Теоретический план освоения знаний и навыков  Работа с многофайловым проектом, система сборки cmake, раздельная компиляция, базовая декомпозиция проекта на функции и структуры, использование стандартной библиотеки c++ (algorithm, vector, map, set, iostream) Декомпозиция на классы, применение интерфейсов, динамического полиморфизма.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/projects/</guid>
+      <description> Игры для декомпозиции  Pacman   Bomberman  
+ Zelda  
+ Space Invaders  
+ Asteroids  
+ Tank Wars  
+ 1942  
+ Battle City  
+ Tron   Micro Machine  
+ Rampart  
+ TowerDefence Dwarffortress Diablo 2 Cataclysm: DDA  Вдохновление  100 nes games in 10 minutes Top 10 Arcade Games Of The 1970s Top 10 Arcade Games Of The 1980s  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/rules/</guid>
+      <description>Критерии получения экзамена во 2 семестре Все программы должны быть написаны на языке С++.
+Тут будет подробное описание позже</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/setup_project/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/setup_project/</guid>
+      <description>Создание проекта Проект игры рекомендуется делать на специальном учебном движке WHY_CPP, который работает поверх sdl2. Опционально можно установить sdl2_mixer для воспроизведения звука.
+Шаблон проекта Скачайте к себе на компьютер шаблон проекта. Для этого зайдите на сайт репозитория шаблона и нажмите зеленую кнопку clone or download, и качайте zip-архив.
+Запустите CLion и нажмите Open, чтобы открыть скачанный шаблон проекта.
+В меню File нажмите пункт Reload CMake project.
+В меню Run нажмите Run &#39;game&#39;.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/tools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term2/tools/</guid>
+      <description>Инструменты Мы будем использовать следующее ПО:
+ Компилятор C++: g++ или clang++. Библиотека SDL2. Опционально библиотека SDL2_mixer для звука. Библиотека WHY_CPP Утилита сборки проектов CMake и Make. Среда разработки CLion.  Инструкции для установки ПО Установка компилятора  Для ОС Windows. Для OsX Для Linux (Ubuntu, Mint, Debian)  Установка IDE CLion Инструкция</description>
+    </item>
+    
+  </channel>
+</rss>

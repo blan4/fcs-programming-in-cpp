@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    03 Practise
+  
+ | Программирование</title>
+
+
+
+<link rel="stylesheet" href="/fcs-programming-in-cpp/book.min.f4161f5e2de53a2e927f51df1611323a2a12cccb2681f23cb6fc3517852e8643.css">
+
+
+<link rel="icon" href="/fcs-programming-in-cpp/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://senior-sigan.net/fcs-programming-in-cpp/">Программирование</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f fcs-programming-in-cpp\2f docs\2fterm1\2f 03_practise\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/rules/">Критерии оценки успеваемости</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/materials/">Литература</a></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term1/">Первый семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 0</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 1</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/02_practise/">Практика 2</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/03_practise/">Практика 3</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/04_practise/">Практика 4</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/05_practise/">Практика 5</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/06_practise/">Практика 6</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/tests/">Тесты</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/final_test/">Вопросы на зачёт</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/rules/">Критерии получения зачета</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term2/">Второй семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term2/rules/">Критерии получения экзамена</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/projects/">Примеры проектов</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/setup_project/">Создание проекта</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/tools/">Инструменты</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/tools/linux_deb/">Linux</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/msys2/">Windows</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/osx/">OsX</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/vscode_mingw/">VScode</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/clion/">CLion</a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/fcs-programming-in-cpp/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    03 Practise
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="практика-3">Практика 3</h1>
+
+<p>На этой практике разбираем алгоритмы по работе с массивами и двумерными массивами(матрицами).</p>
+
+<h2 id="примеры">Примеры</h2>
+
+<pre><code class="language-c">/**
+ * Эта программа заполнит двумерный массив числами от 0 до 8. И будет выведено на экран:
+ * 0 1 2                                                     
+ * 3 4 5
+ * 6 7 8
+ */
+
+#include&lt;stdio.h&gt;
+
+int main(void) {
+  short matrix[3][3];
+  int el = 0;
+  for (unsigned int i = 0; i &lt; 3;i++) {
+    for (unsigned int j = 0; j &lt; 3; j++) {
+      matrix[i][j] = el;
+      el++;
+    }
+  }
+
+  for (unsigned int i = 0; i &lt; 3;i++) {
+    printf(&quot;\n&quot;);
+    for (unsigned int j = 0; j &lt; 3; j++) {
+      printf(&quot;%d &quot;, matrix[i][j]);
+    }
+  }
+}
+</code></pre>
+
+<h2 id="задания">Задания</h2>
+
+<h3 id="задание-1-расстояние-между-словами">Задание 1. Расстояние между словами.</h3>
+
+<p>Расстояние между двумя словами равной длины - это количество позиций, в которых различаются эти слова. В заданном предложении найти пару наиболее далеко удаленных слов заданной длины. Предложение задайте сразу как массив слов: <code>char* sentence[] = {&quot;hello&quot;, &quot;world&quot;};</code>.</p>
+
+<p><strong>Подсказки</strong>:
+- сначала напишите функцию для вычисления расстояния между словами, то есть между массивами одинаковой длины
+- храните 2 наиболее удаленных друг от друга слова в двух переменных
+- решите задачу в лоб, вам потребуется сделать два вложенных цикла, при пробегании которых вы вычисляете расстояние между словами и обновляете три переменные: 2 слова и 1 расстояние между ними</p>
+
+<h3 id="задание-2-перестановки">Задание 2. Перестановки.</h3>
+
+<p>Подсчитать количество строк заданной целочисленной матрицы <code>NxN</code>, являющихся перестановкой чисел <code>1,2...N</code> (т. е. содержащих каждое из чисел <code>1,2...N</code> ровно один раз.</p>
+
+<p><strong>Подсказки</strong>:<br />
+- строка - это строка в матрице из чисел, а не текст
+- сначала напишите функцию, которая определяет, является ли строка перестановкой
+- число N задайте с помощью <code>#define</code></p>
+
+<h3 id="задание-3-строки-матрицы">Задание 3. Строки матрицы.</h3>
+
+<p>Среди тех строк целочисленной матрицы, которые содержат только нечетные элементы, найти строку с максимальной суммой модулей элементов.</p>
+
+<p><strong>Подсказки</strong>:<br />
+- напишите функцию для подсчета суммы модулей элементов одномерного массива(строки матрица)
+- напишите функцию для определения, содержит ли строка только нечетные элементы или нет</p>
+
+<h3 id="задание-4-произведение-матриц">Задание 4. Произведение матриц.</h3>
+
+<p><img src="https://excel2.ru/sites/default/files/student-7.png" alt="" /></p>
+
+<p>Написать программу, которая <a href="https://ru.wikipedia.org/wiki/%D0%A3%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BC%D0%B0%D1%82%D1%80%D0%B8%D1%86">матрично умножает</a> две матрицы. Одна матрица размера 2x3, а вторая 3x2.</p>
+
+<p><strong>Подсказки</strong>:<br />
+- используйте транспонирование!</p>
+
+<h3 id="задание-5-максимум-диагонали">Задание 5. Максимум диагонали.</h3>
+
+<p>Для заданной целочисленной квадратной матрицы найти максимум среди сумм элементов диагоналей, параллельной главной диагонали.</p>
+
+<p><strong>Подсказки</strong>:
+- напишите функцию для подсчета суммы элементов на диагонали</p>
+
+<h3 id="задание-6-спирали">Задание 6. Спирали.</h3>
+
+<p>Начиная из центра, обойти по спирали все элементы матрицы NxN, распечатывая их в порядке обхода.</p>
+
+<h2 id="домашнее-задание">Домашнее задание.</h2>
+
+<p>Читать главу <a href="http://givi.olnd.ru/kr2/04.html">4</a> K&amp;R.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#практика-3">Практика 3</a>
+<ul>
+<li><a href="#примеры">Примеры</a></li>
+<li><a href="#задания">Задания</a>
+<ul>
+<li><a href="#задание-1-расстояние-между-словами">Задание 1. Расстояние между словами.</a></li>
+<li><a href="#задание-2-перестановки">Задание 2. Перестановки.</a></li>
+<li><a href="#задание-3-строки-матрицы">Задание 3. Строки матрицы.</a></li>
+<li><a href="#задание-4-произведение-матриц">Задание 4. Произведение матриц.</a></li>
+<li><a href="#задание-5-максимум-диагонали">Задание 5. Максимум диагонали.</a></li>
+<li><a href="#задание-6-спирали">Задание 6. Спирали.</a></li>
+</ul></li>
+<li><a href="#домашнее-задание">Домашнее задание.</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+      
+
+    
+    <script src="/fcs-programming-in-cpp/js/mathjax-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/cpp.min.js"></script>
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113025618-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>

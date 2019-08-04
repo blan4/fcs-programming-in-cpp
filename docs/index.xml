@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on Программирование</title>
+    <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/</link>
+    <description>Recent content in Docs on Программирование</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    
+	<atom:link href="http://senior-sigan.net/fcs-programming-in-cpp/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/materials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/materials/</guid>
+      <description>Литература  Керниган Ритчи. Язык программирования си. Бьерн Страуструп. Язык программирования С++. Основы программирования на языках Си и C++ для начинающих. Андрей Александреску. Современное проектирование на С++.  Проектирование  Паттерны проектирования для игр Puzzle Driven Development Шаблон проектирования Entity-Component-System — реализация и пример игры  GameDev  Roguelike Tutorial in Rust Source code in c++ of the game &amp;ldquo;Cataclysm - Dark Days Ahead&amp;rdquo;  Алгоритмы  e-maxx.ru/algo algolist.ru О сложности алгоритмов  Полезные источники  AlgoWiki A complete computer science study plan to become a software engineer.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/rules/</guid>
+      <description>Критерии оценки успеваемости Успеваемость студента оценивается в баллах, на основе которых складывается промежуточная оценка (зачёт) и итоговая(экзамен). Баллы выставляются за лабораторные, домашние работы, тесты, посещаемость практик и лекций, проектную работу и за письменную и устную работу на зачёте и экзамене.
+Правила начисления баллов Пара состоит из двух половин по 45 минут. Студенту начисляется по одному баллу за присутствие на половине любой лекции или лабораторной работы, при условии, что он не опоздал на эту половину более, чем на 15 минут.</description>
+    </item>
+    
+  </channel>
+</rss>

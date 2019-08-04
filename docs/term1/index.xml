@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Программирование</title>
+    <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/</link>
+    <description>Recent content on Программирование</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    
+	<atom:link href="http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/00_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/00_practise/</guid>
+      <description>Практика 0 В классе Настройка окружения.
+Дома Читать Главу 1 из книги K&amp;amp;R.
+Задача 1. (Упражнение 1.4.) Напишите программы печати таблицы перехода от градусов Цельсия к градусам Фаренгейта от 0 до 300 градусов.
+Подсказки:  в Главе 1 описана обратная задача.  Задача 2. (Упражнение 1.8.) Напишите программу для подсчета пробелов и табуляций.
+Сценарий использования:  запускается приложение. пользователь &amp;ldquo;вводит&amp;rdquo; текст с клавиатуры. когда пользователь нажимает Enter, то программа выводит сколько пробелов и табуляций было нажато во время ввода текста.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/01_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/01_practise/</guid>
+      <description>Практика 1 В классе В классе и дома решите все задачи.
+Весь код можно писать внутри функции main. Свои функции создавать не обязательно. Динамической памятью пользоваться не надо.
+Вам понадобятся функции printf для печати в консоль текста.
+Функция scanf для ввода чисел из консоли. Когда пользователь нажимает на Enter число считается введеным.
+Примеры Для начала попробуйте скопировать и запустить эти примеры. Можете использовать онлайн компиляторы repl.it или www.onlinegdb.com. А можете открыть любой текстовый редактор, вставить туда код из примера, сохранить его с расширением .</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/02_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/02_practise/</guid>
+      <description>Практика 2 В этот раз посмотрим, как работать с функциями с Си. Рассмотрим рекурсивные алгоритмы, напишем пару утилитных методов. Поработаем над передачей переменных через аргументы функции.
+Чтобы лучше понять рекурсию рекомендуется прочитать главы 1.2.1 и 1.2.2 книги &amp;ldquo;Структура и интерпретация компьютерных программ&amp;rdquo;, страница 48.
+Примеры #include&amp;lt;stdio.h&amp;gt; /** * В этих переменных копии переменных, * которые были переданы как аргументы функции **/ int add(int a, int b) { return a + b; } int scalar_mul(int x[], int y[], unsigned int size) { int accum = 0; for (int i = 0; i &amp;lt; size; i++) { accum += x[i]*y[i]; } return accum; } // Рекурсия!</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/03_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/03_practise/</guid>
+      <description>Практика 3 На этой практике разбираем алгоритмы по работе с массивами и двумерными массивами(матрицами).
+Примеры /** * Эта программа заполнит двумерный массив числами от 0 до 8. И будет выведено на экран: * 0 1 2 * 3 4 5 * 6 7 8 */ #include&amp;lt;stdio.h&amp;gt; int main(void) { short matrix[3][3]; int el = 0; for (unsigned int i = 0; i &amp;lt; 3;i++) { for (unsigned int j = 0; j &amp;lt; 3; j++) { matrix[i][j] = el; el++; } } for (unsigned int i = 0; i &amp;lt; 3;i++) { printf(&amp;quot;\n&amp;quot;); for (unsigned int j = 0; j &amp;lt; 3; j++) { printf(&amp;quot;%d &amp;quot;, matrix[i][j]); } } }  Задания Задание 1.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/04_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/04_practise/</guid>
+      <description>Практика 4 На этой практике разбираемся с указателями, строками и массивами.
+После этой практики вы должны уметь без Google объяснить: - что такое указатели и как их использовать - что такое массивы и как их использовать - в чем разница между указателями и массивами
+Примеры Просто указатели Запустите программу и посмотрите что будет выведено на экран.
+#include &amp;lt;stdio.h&amp;gt; int main(void) { int a = 10; // это обычная переменная int* b; // это объявление указателя на int // &amp;amp; - операция взятия указателя b = &amp;amp;a; // это присвоение указателю b адреса переменной a // * - операция разыменования указателя.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/05_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/05_practise/</guid>
+      <description>Практика 5 На этой практике продолжаем разбираться с указателями. Но в отличие от предыдещей практии, где мы использовали автоматическую память, мы рассмотрим использование динамического выделения памяти на куче.
+После этой практики вы должны уметь без Google объяснить: - В чем разница между динамическим и автоматическим выделением памятью - Что такое malloc, calloc, free и как ими пользоваться. - Когда использовать динамическую память и malloc - Что такое указатель на функцию и как его использовать</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/06_practise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/06_practise/</guid>
+      <description>Практика 6 На этой практике мы познакомимся с Абстрактными Типами Данных. Разберем Список, как один из видов АТД. Напишем две реализации Списка - Связный Список и Список на основе массива. Проведем бенчмарк скорости работы двух реализаций в разных задачах.
+Теория АТД - это математическая модель некоторого типа данных, где тип определяется некоторым поведением, то есть возможными значениями, которые он может принимать, возможными операциями над ним и поведением этих операций. Вся внутренняя структура такого типа скрыта от пользователя.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/final_test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/final_test/</guid>
+      <description>Вопросы на зачет  Типы данных. Стандартные типы. Целочисленные типы. Логический тип. Символьный тип. Вещественный тип. Константы. Объявление переменных. Определение переменных. Сравнение значений типов с плавающей точкой. Классы памяти. Выделение и освобождение памяти. Арифметические операции. Логические операции. Операторы ветвления. Оператор выбора. Операторы цикла. Операторы передачи управления. Лексический анализ, синтаксический анализ, семантический анализ. Указатель. Инициализация указателей. Операции с указателями. Статические массивы. Одномерные массивы. Многомерные массивы. Динамические массивы. Отличие и связь массивов и указателей.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/rules/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/rules/</guid>
+      <description>Критерии получения зачета в 1 семестре Все программы должны быть написаны на языке Си.
+Бальная система Максимум баллов за посещение лабораторных: 34.
+Максимум баллов за все лабораторные работы: 56.
+Максимум баллов за все тесты: 36.
+Итого максимум за работу на занятиях: 126.
+Дополнительно можно добрать баллов на финальном тесте: 40.
+Зачет ставится в случае набора студентов больше 107 баллов, что составляет 85%.
+ Например, можно получить зачет получив 34 балла за посещение, 44 за лабораторные и 30 за тесты.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/tests/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/term1/tests/</guid>
+      <description> Тесты  Тест 1 - глава 1. Тест 2 - глава 2. Тест 3 - глава 3. Тест 4 - глава 4. Тест 5 - глава 5. Тест 6 - глава 6. Финальный тест  </description>
+    </item>
+    
+  </channel>
+</rss>

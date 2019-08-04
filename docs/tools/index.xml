@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Программирование</title>
+    <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/</link>
+    <description>Recent content on Программирование</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-RU</language>
+    
+	<atom:link href="http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/clion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/clion/</guid>
+      <description>Установка IDE CLion  Скачайте с официального сайте Toolbox - это специальная программа, через которую можно ставить и обновлять разные среды разработки от JetBrains. Запустите тулбокс и установите через него CLion.  Получение учебной лицензии Обратитесь к своему преподавателю, чтобы он вам выдал учебную лицензию JetBrains на CLion.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/linux_deb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/linux_deb/</guid>
+      <description> Linux C++  Откройте терминал и выполните команду
+sudo apt update sudo apt install gcc g++ cmake make libsdl2-dev libsdl2-mixer-dev   </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/msys2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/msys2/</guid>
+      <description>Msys2  Скачайте установщик MSYS2:  для 64 битной Windows для 32 битной Windows  Запустите установщик, нажмите Next  Установите MSYS2 в папку C:\msys64 или C:\msys32. Обратите внимание, не должно быть никаких русских символов или пробелов! Установите флажок &amp;ldquo;Run MSYS2 now&amp;rdquo; и нажмите Finish  Откроется терминал. Введите команду pacman -Syu, чтобы обновить системные пакеты.  Если потребуется, закройте терминал, откройте MSYS2 терминал снова и выполните команду pacman -Su.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/osx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/osx/</guid>
+      <description> OsX C++  Установите менеджер пакетов brew. Откройте терминал и выполните команду brew install gcc cmake sdl2 sdl2_mixer.  </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/vscode_mingw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://senior-sigan.net/fcs-programming-in-cpp/docs/tools/vscode_mingw/</guid>
+      <description>Настройка MinGW + VScode  Качаем MinGW с официального сайта. Устанавливаем пакет в папку C:\mingw-w64. Следите, чтобы не было пробелов и русских символов в именах папок!! Добавялем C:\mingw-w64\mingw64\bin в переменные окружения PATH. Устанавливаем с официального сайта VScode. В vscode ставим расширение C/C++ tools. Перезапускаем редактор. Нажимаем Файл &amp;gt; Открыть директорию. Открываем директорию, где будут лежать все лабораторные работы по предмету. Создаем папку .vscode и складываем туда три файла launch.json, settings.</description>
+    </item>
+    
+  </channel>
+</rss>

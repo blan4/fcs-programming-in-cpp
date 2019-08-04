@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  
+    
+    01 Practise
+  
+ | Программирование</title>
+
+
+
+<link rel="stylesheet" href="/fcs-programming-in-cpp/book.min.f4161f5e2de53a2e927f51df1611323a2a12cccb2681f23cb6fc3517852e8643.css">
+
+
+<link rel="icon" href="/fcs-programming-in-cpp/favicon.png" type="image/x-icon">
+
+
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+</head>
+
+<body>
+  <input type="checkbox" style="display: none" id="menu-control" />
+  <main class="flex container">
+
+    <aside class="book-menu fixed">
+      <nav>
+<h2 class="book-brand">
+  <a href="http://senior-sigan.net/fcs-programming-in-cpp/">Программирование</a>
+</h2>
+
+
+
+    
+  
+  
+  
+
+  <style>
+  nav ul a[href$="\2f fcs-programming-in-cpp\2f docs\2fterm1\2f 01_practise\2f "] {
+      color: #004ed0;
+  }
+  </style>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/rules/">Критерии оценки успеваемости</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/materials/">Литература</a></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term1/">Первый семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 0</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/01_practise/">Практика 1</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/02_practise/">Практика 2</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/03_practise/">Практика 3</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/04_practise/">Практика 4</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/05_practise/">Практика 5</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/06_practise/">Практика 6</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/tests/">Тесты</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/final_test/">Вопросы на зачёт</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term1/rules/">Критерии получения зачета</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/term2/">Второй семестр</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/term2/rules/">Критерии получения экзамена</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/projects/">Примеры проектов</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/term2/setup_project/">Создание проекта</a></li>
+</ul></li>
+
+<li><p><a href="/fcs-programming-in-cpp/docs/tools/">Инструменты</a></p>
+
+<ul>
+<li><a href="/fcs-programming-in-cpp/docs/tools/linux_deb/">Linux</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/msys2/">Windows</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/osx/">OsX</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/vscode_mingw/">VScode</a></li>
+<li><a href="/fcs-programming-in-cpp/docs/tools/clion/">CLion</a></li>
+</ul></li>
+</ul>
+
+
+
+
+
+</nav>
+
+
+  
+<script>
+(function() {
+  var menu = document.querySelector('aside.book-menu nav')
+  addEventListener('beforeunload', function(event) {
+    localStorage.setItem('menu.scrollTop', menu.scrollTop)
+  });
+  menu.scrollTop = localStorage.getItem('menu.scrollTop')
+})()
+</script>
+
+
+
+    </aside>
+
+    <div class="book-page">
+      <header class="align-center justify-between book-header">
+  <label for="menu-control">
+    <img src="/fcs-programming-in-cpp/svg/menu.svg" alt="Menu" />
+  </label>
+  <strong>
+  
+    
+    01 Practise
+  
+</strong>
+</header>
+
+      
+<article class="markdown">
+
+<h1 id="практика-1">Практика 1</h1>
+
+<h2 id="в-классе">В классе</h2>
+
+<p>В классе и дома решите все задачи.</p>
+
+<p>Весь код можно писать внутри функции main.
+Свои функции создавать не обязательно.
+Динамической памятью пользоваться не надо.</p>
+
+<p>Вам понадобятся функции <code>printf</code> для печати в консоль текста.<br />
+Функция <code>scanf</code> для ввода чисел из консоли. Когда пользователь нажимает на Enter число считается введеным.</p>
+
+<h3 id="примеры">Примеры</h3>
+
+<p>Для начала попробуйте скопировать и запустить эти примеры.
+Можете использовать онлайн компиляторы <a href="https://repl.it/">repl.it</a> или <a href="https://www.onlinegdb.com/">www.onlinegdb.com</a>.
+А можете открыть любой текстовый редактор, вставить туда код из примера, сохранить его с расширением <code>.c</code> и скомпилировать компилятором gcc: <code>gcc main.c -o main.out</code> и запустить программу из консоли <code>./main.out</code>.</p>
+
+<p>Подробнее про настройку окружения читайте в разделе <a href="../tools/index.md">Инструменты</a></p>
+
+<pre><code class="language-c">// Подключаем заголовочный файл для работы функций ввода-вывода информации
+#include &lt;stdio.h&gt; // чтобы работала печать в консоль printf.
+
+// Пример простой задачи.
+int main(void) {
+  int n;
+  printf(&quot;Enter a number\n&quot;);
+  scanf(&quot;%i&quot;, &amp;n); // магическая функция для ввода числа. Обратите внимание на знак &amp; перед именем переменной. Мы обсудим это позже на лекциях.
+  printf(&quot;f(x) = x^2 = %d^2 = %d\n&quot;,n, n*n);
+}
+</code></pre>
+
+<p>Написать программу, запрашивающую целое число с клавиатуры и выводящую строку «нечётное число», если
+число нечетное и строку «чётное», в противном случае.</p>
+
+<pre><code class="language-c">// Подключаем заголовочный файл для работы функций ввода-вывода информации
+#include &lt;stdio.h&gt;
+// С функции main() начинается выполнение программы
+int main(void) {
+  // Определяем переменную, в которую будет записываться число
+  int a;
+  // Приглашаем ввести число с клавиатуры
+  printf(&quot;Введите a: &quot;);
+  scanf(&quot;%i&quot;,&amp;a);
+  //Проверяем число на четность и выводим соответствующие сообщения
+  if (a % 2 == 1) { //можно написать просто if(a % 2)- результат не изменится
+    printf(&quot;нечётное число\n&quot;);
+  } else {
+    printf(&quot;чётное число\n&quot;);
+  }
+  //Завершаем программу
+  return 0;
+}
+</code></pre>
+
+<p>Написать программу, выводящую на консоль квадраты чисел от 0 до 25.</p>
+
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+int main(void) {
+  int a; // очередной элемент последовательности
+  // Организуем цикл for, определяя параметр цикла (переменная int i)
+  // внутри самого оператора for;
+  
+  for(int i=0; i&lt;=25; i++) {
+    a = i*i;
+    printf(&quot;%i^2 = %i\n&quot;,i,a);
+  }
+
+  return 0;
+}
+</code></pre>
+
+<p>Написать программу, вычисляющую сумму первых n элементов последовательности, определяемую
+соотношениями: $$a<em>1 = 2, a</em>{i+1} = a_{i}^2$$</p>
+
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+int main() {
+  int a = 2; // первый элемент последовательности
+  int s = 0; // переменная для хранения значения суммы
+  int n; // переменная, в которую будет заноситься количество слагаемых
+  
+  // Организуем ввод n
+  printf(&quot;Введите количество элементов последовательности: &quot;);
+  scanf(&quot;%i&quot;,&amp;n);
+  
+  for (int i=1; i&lt;=n; i++){
+    a = a*a;// вычисляем следующий элемент последовательности
+    s = s+a;// добавляем новый элемент к сумме
+  }
+
+  // Выводим значение суммы
+  printf(&quot;Сумма равна %i\n&quot;,s);
+  return 0;
+}
+</code></pre>
+
+<p>Написать программу, которая скопирует один массив размера 5 в другой массив в обратном порядке и каждое число умножить на 10.</p>
+
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+// Пример со статическим массивом
+int main(void) {
+  int x[] = {1,2,3,4,5}; // создали массив и заполнили его числами сразу. Его размер будет равен количеству чисел в блоке инициализации в фигурных скобках.
+  int y[5]; // создали массив из 5 элементов.
+
+  for (int i = 0; i &lt; 5; i++) {
+    y[i] = 10*x[4-i]; // почему тут 4??? хммм. Странно то как.
+  }
+
+  for (int i = 0; i&lt;5;i++) {
+    printf(&quot;%d &quot;, y[i]);
+  }
+  printf(&quot;\n&quot;);
+}
+</code></pre>
+
+<p>Написать программу, которая заполнит массив числами, введеными с клавиатуры.</p>
+
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+// Пример со статическим массивом
+int main(void) {
+  int x[10]; // выделили память на массив размера 10.
+
+  for (int i = 0; i &lt; 10; i++) {
+    scanf(&quot;%d&quot;, &amp;x[i]);
+  }
+
+
+  // проверим что он сохранил числа
+  for (int i = 0; i &lt; 10;i++) {
+    printf(&quot;%d &quot;, x[i]);
+  }
+  printf(&quot;\n&quot;);
+}
+</code></pre>
+
+<h3 id="задания">Задания</h3>
+
+<ol>
+<li><p>Напишите программу, которая вычисляет значение выражения <code>f(x)</code> не используя функцию стандартной библиотеки <code>abs</code>. Число x водится с клавиатуры. $$f(x) = | | 2x+3 | -1 | $$</p></li>
+
+<li><p>Напишите программу, вычисляющую значение выражения:</p></li>
+</ol>
+
+<p>$$\begin{equation}
+  f(x) = \begin{cases}
+    2x^2-1 &amp;\ x &lt; 0 \<br />
+    x - 7 &amp;\ x &gt; 10 \<br />
+    x ^ 3 &amp;<br />
+  \end{cases}
+\end{equation}$$</p>
+
+<ol>
+<li><p>Написать программу, выводящую на экран 20 первых элементов последовательности Фибоначчи. Числа Фибоначчи образуются по правилу: $$a_1 = 1, \\ a<em>2 = 1, \\ a</em>{i+1}=a<em>i + a</em>{i-1}$$</p></li>
+
+<li><p>Напишите программу, подсчитывающую сумму цифр данного натурального числа. Например, для числа <code>1234</code> сумма равна <code>1+2+3+4=10</code>.</p></li>
+
+<li><p>Напишите программу, которая напечатает все простые числа до N, включительно. Подумайте над тем, как сделать алгоритм чуть лучше, чем полный перебор.</p></li>
+
+<li><p>Написать программу, которая проверяет, является ли число <code>N</code> палиндромом, то есть число одинаково читающееся в обоих направлениях. Например, <code>121</code> - палиндром. <code>657756</code> - палиндром. Напечатайте в консоль <code>N is palindrom</code> или <code>N is not palindrom</code>.</p></li>
+
+<li><p>Написать программу, которая выводит наибольший простой палиндром не больше N. Например, при N = 1000, это будет 929.</p></li>
+
+<li><p>Напишите прграмму, которая решает квадратное уравнение в действительных числах методом дискриминанта. Коэффициенты должны вводиться с клавиатуры. $$f(x) = x^2 -x -6, x_1=3, x_2=-2$$</p></li>
+
+<li><p>Написать программу, которая заполняет массив размера N=10, числами из консоли. Напечатайте в консоль среднее арифметическое, максимум, минимум этой последовательности чисел.</p></li>
+
+<li><p>Разработать программу для подсчета максимального числа
+идущих подряд одинаковых элементов массива. Заполните массив размера 10 числами из консоли. Пример, для <code>1 1 2 2 5 5 5 4 1 1</code> ответ <code>3</code>.</p></li>
+</ol>
+
+<h2 id="дома">Дома</h2>
+
+<p>Доделать задачи из класса.</p>
+
+<p><a href="http://givi.olnd.ru/kr2/02.html">Читать главу 2 K&amp;R</a>.</p>
+</article>
+
+      
+
+      
+    </div>
+
+    
+  
+
+  <aside class="book-toc level-6 fixed">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#практика-1">Практика 1</a>
+<ul>
+<li><a href="#в-классе">В классе</a>
+<ul>
+<li><a href="#примеры">Примеры</a></li>
+<li><a href="#задания">Задания</a></li>
+</ul></li>
+<li><a href="#дома">Дома</a></li>
+</ul></li>
+</ul>
+</nav>
+  </aside>
+
+
+
+  </main>
+  
+      
+
+    
+    <script src="/fcs-programming-in-cpp/js/mathjax-config.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+    
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/cpp.min.js"></script>
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-113025618-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+
+</html>
